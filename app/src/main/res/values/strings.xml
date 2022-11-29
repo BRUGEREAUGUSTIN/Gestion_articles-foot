@@ -5,5 +5,14 @@
     <string name="ListeArticles">LISTE DES ARTICLES</string>
     <string name="MajArticle">METTRE A JOUR UN ARTICLE</string>
     <string name="boutonRetour">RETOUR</string>
+    <string name="nom">Nom :</string>
+    <string name="description">Description :</string>
+    <string name="prix">Prix :</string>
+    <string name="quantité">Quantité :</string>
+    <string name="hintnom">Nom de l'article</string>
+    <string name="hintdesc">Description de l'article</string>
+    <string name="hintprix">Prix de l'article</string>
+    <string name="hintquantité">Quantité d'articles</string>
+
 
 </resources>

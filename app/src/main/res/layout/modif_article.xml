@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewMessageModif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/MajArticle"
+        android:textColor="@color/titre"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editViewMajNomArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMessageModif"
+        app:layout_constraintStart_toStartOf="@+id/textViewMessageModif"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMessageModif"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/editViewMajDescArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/editViewMajNomArticle"
+        app:layout_constraintStart_toStartOf="@+id/editViewMajNomArticle"
+        app:layout_constraintTop_toBottomOf="@+id/editViewMajNomArticle"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/EditViewMajQteArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/editViewMajDescArticle"
+        app:layout_constraintStart_toStartOf="@+id/editViewMajDescArticle"
+        app:layout_constraintTop_toBottomOf="@+id/editViewMajDescArticle"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/editViewMajQteArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/EditViewMajQteArticle"
+        app:layout_constraintStart_toStartOf="@+id/EditViewMajQteArticle"
+        app:layout_constraintTop_toBottomOf="@+id/EditViewMajQteArticle"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonMajRetour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/boutonRetour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editViewMajQteArticle" />
+
+    <TextView
+        android:id="@+id/textViewMajNomArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="@string/nom"
+        app:layout_constraintBottom_toBottomOf="@+id/editViewMajNomArticle"
+        app:layout_constraintEnd_toStartOf="@+id/editViewMajNomArticle"
+        app:layout_constraintTop_toTopOf="@+id/editViewMajNomArticle" />
+
+    <TextView
+        android:id="@+id/textViewMajDescArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="@string/description"
+        app:layout_constraintBottom_toBottomOf="@+id/editViewMajDescArticle"
+        app:layout_constraintEnd_toStartOf="@+id/editViewMajDescArticle"
+        app:layout_constraintTop_toTopOf="@+id/editViewMajDescArticle" />
+
+    <TextView
+        android:id="@+id/textViewMajPrixArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="@string/prix"
+        app:layout_constraintBottom_toBottomOf="@+id/EditViewMajQteArticle"
+        app:layout_constraintEnd_toStartOf="@+id/EditViewMajQteArticle"
+        app:layout_constraintTop_toTopOf="@+id/EditViewMajQteArticle" />
+
+    <TextView
+        android:id="@+id/textViewMajQteArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="@string/quantité"
+        app:layout_constraintBottom_toBottomOf="@+id/editViewMajQteArticle"
+        app:layout_constraintEnd_toStartOf="@+id/editViewMajQteArticle"
+        app:layout_constraintTop_toTopOf="@+id/editViewMajQteArticle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
