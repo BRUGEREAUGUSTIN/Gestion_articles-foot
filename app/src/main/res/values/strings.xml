@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Gestion_articles-foot</string>
+    <string name="messageAccueil">Application de gestion des articles de foot</string>
+    <string name="boutonAjouter">AJOUTER UN ARTICLE</string>
+    <string name="ListeArticles">LISTE DES ARTICLES</string>
+    <string name="MajArticle">METTRE A JOUR UN ARTICLE</string>
+    <string name="boutonRetour">RETOUR</string>
+
 </resources>
