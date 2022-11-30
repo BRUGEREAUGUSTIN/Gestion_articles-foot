@@ -25,6 +25,15 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".ListeArticle">
+        </activity>
+        <activity
+            android:name=".ModifArticle">
+        </activity>
+        <activity
+        android:name=".AjoutArticle">
+        </activity>
     </application>
 
 </manifest>

@@ -1,6 +1,8 @@
 package com.example.gestion_articles_foot;
 
-public class Article {
+import java.io.Serializable;
+
+public class Article implements Serializable {
 
     private String nom;
     private String description;

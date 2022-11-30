@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Gestion_articles-foot</string>
-    <string name="messageAccueil">Application de gestion des articles de foot</string>
+    <string name="messageAccueil1">FOOTBALL PRODUCT </string>
+    <string name="messageAccueil2">MANAGER</string>
     <string name="boutonAjouter">AJOUTER UN ARTICLE</string>
     <string name="ListeArticles">LISTE DES ARTICLES</string>
     <string name="MajArticle">METTRE A JOUR UN ARTICLE</string>
@@ -9,10 +10,11 @@
     <string name="description">Description :</string>
     <string name="prix">Prix :</string>
     <string name="quantité">Quantité :</string>
-    <string name="hintnom">Nom de l'article</string>
-    <string name="hintdesc">Description de l'article</string>
-    <string name="hintprix">Prix de l'article</string>
-    <string name="hintquantité">Quantité d'articles</string>
+    <string name="hintnom">Nom de l\'article</string>
+    <string name="hintdesc">Description de l\'article</string>
+    <string name="hintprix">Prix de l\'article</string>
+    <string name="hintquantité">Quantité d\'articles</string>
+    <string name="buttonMaj">Mettre à jour</string>
 
 
 </resources>

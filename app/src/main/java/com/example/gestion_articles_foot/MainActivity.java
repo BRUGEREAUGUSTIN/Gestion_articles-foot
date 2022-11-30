@@ -9,7 +9,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 import java.util.ArrayList;
 
@@ -17,13 +16,17 @@ public class MainActivity extends AppCompatActivity {
     //Attributs de la première activité lié à la fenêtre
     //Déclaration de votre collection
     ArrayList<Article> mesArticles;
+
     @Override
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //Appel de la fonction d'initialisation
         initialisation();
     }
+
     public void initialisation(){
         // récupération des Buttons grâce à leur ID
         Button buttonAjouter = findViewById(R.id.buttonAjouter);
@@ -33,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
         if (getIntent().getSerializableExtra("MesArticles")==null) {
             // Instanciation de la liste d’article
             mesArticles=new ArrayList<Article>();
+            Article article =new Article("test","test",1,2);
+            Article article1 =new Article("test1","test1",11,21);
+            mesArticles.add(article);
+            mesArticles.add(article1);
+
         }
         else{
             mesArticles = (ArrayList<Article>) getIntent().getSerializableExtra("MesArticles");
@@ -41,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
         buttonAjouter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,
+                        AjoutArticle.class);
+                intent.putExtra("MesArticles", mesArticles);
+                startActivity(intent);
             }
         });
 
@@ -48,6 +60,10 @@ public class MainActivity extends AppCompatActivity {
         buttonListe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,
+                        ListeArticle.class);
+                intent.putExtra("MesArticles", mesArticles);
+                startActivity(intent);
             }
         });
 
@@ -55,14 +71,22 @@ public class MainActivity extends AppCompatActivity {
         buttonMaj.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,
+                        ModifArticle.class);
+                intent.putExtra("MesArticles", mesArticles);
+                startActivity(intent);
             }
         });
     }
-    @Override
+
+
+  /*  @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
         return true;
     }
+
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()){
@@ -74,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case (R.id.menuListe) :
                 Intent listeArticle = new Intent(MainActivity.this,
-                        com.example.gestion_articles_foot.listeArticle.ListeArticle.class);
+                        ListeArticle.class);
                 listeArticle.putExtra("MesArticles",mesArticles);
                 startActivity(listeArticle);
                 return true;
@@ -87,6 +111,6 @@ public class MainActivity extends AppCompatActivity {
             default :
                 return super.onOptionsItemSelected(item);
         }
-    }
+    }*/
 }
 

@@ -4,53 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/peakpx"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/TextViewMessageAccueil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/messageAccueil"
-        android:textAlignment="center"
-        android:textColor="@color/titre"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.457"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:fontFamily="sans-serif" />
 
     <Button
         android:id="@+id/buttonAjouter"
-        android:layout_width="271dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_width="269dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="50dp"
         android:text="@string/boutonAjouter"
-        app:layout_constraintEnd_toEndOf="@+id/TextViewMessageAccueil"
-        app:layout_constraintStart_toStartOf="@+id/TextViewMessageAccueil"
-        app:layout_constraintTop_toBottomOf="@+id/TextViewMessageAccueil" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <Button
         android:id="@+id/buttonListe"
-        android:layout_width="271dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_width="278dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="20dp"
         android:text="@string/ListeArticles"
         app:layout_constraintEnd_toEndOf="@+id/buttonAjouter"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="@+id/buttonAjouter"
         app:layout_constraintTop_toBottomOf="@+id/buttonAjouter" />
 
     <Button
         android:id="@+id/buttonMaj"
-        android:layout_width="271dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="273dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="20dp"
         android:text="@string/MajArticle"
         app:layout_constraintEnd_toEndOf="@+id/buttonListe"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="@+id/buttonListe"
         app:layout_constraintTop_toBottomOf="@+id/buttonListe" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="320dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_accueil"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewMessageAccueil1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/messageAccueil1"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="31sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewMessageAccueil2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/messageAccueil2"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="31sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
