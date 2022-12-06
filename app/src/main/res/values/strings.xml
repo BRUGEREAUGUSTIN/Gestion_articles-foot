@@ -15,6 +15,8 @@
     <string name="hintprix">Prix de l\'article</string>
     <string name="hintquantité">Quantité d\'articles</string>
     <string name="buttonMaj">Mettre à jour</string>
-
+    <string name="menuAjout">Ajouter article</string>
+    <string name="ListAjout">Liste article</string>
+    <string name="modifArticle">Modifier Article</string>
 
 </resources>

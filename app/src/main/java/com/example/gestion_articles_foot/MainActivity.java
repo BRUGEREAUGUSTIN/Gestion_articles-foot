@@ -27,22 +27,21 @@ public class MainActivity extends AppCompatActivity {
         initialisation();
     }
 
-    public void initialisation(){
+    public void initialisation() {
         // récupération des Buttons grâce à leur ID
         Button buttonAjouter = findViewById(R.id.buttonAjouter);
         Button buttonListe = findViewById(R.id.buttonListe);
         Button buttonMaj = findViewById(R.id.buttonMaj);
         //Si on a un intent et que j'ai pas d'article!!!
-        if (getIntent().getSerializableExtra("MesArticles")==null) {
+        if (getIntent().getSerializableExtra("MesArticles") == null) {
             // Instanciation de la liste d’article
-            mesArticles=new ArrayList<Article>();
-            Article article =new Article("test","test",1,2);
-            Article article1 =new Article("test1","test1",11,21);
+            mesArticles = new ArrayList<Article>();
+            Article article = new Article("test", "test", 1, 2);
+            Article article1 = new Article("test1", "test1", 11, 21);
             mesArticles.add(article);
             mesArticles.add(article1);
 
-        }
-        else{
+        } else {
             mesArticles = (ArrayList<Article>) getIntent().getSerializableExtra("MesArticles");
         }
         //Action sur le bouton "ajouter un article"
@@ -80,37 +79,34 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-  /*  @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
         return true;
     }
 
-
-    @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch(item.getItemId()){
-            case(R.id.menuAjout) :
-                Intent ajoutArticle = new Intent(MainActivity.this,
+        switch (item.getItemId()) {
+            case (R.id.menuAjout):
+                Intent intent = new Intent(MainActivity.this,
                         AjoutArticle.class);
-                ajoutArticle.putExtra("MesArticles",mesArticles);
-                startActivity(ajoutArticle);
+                intent.putExtra("MesArticles", mesArticles);
+                startActivity(intent);
                 return true;
-            case (R.id.menuListe) :
-                Intent listeArticle = new Intent(MainActivity.this,
+            case (R.id.listAjout):
+                Intent intent2 = new Intent(MainActivity.this,
                         ListeArticle.class);
-                listeArticle.putExtra("MesArticles",mesArticles);
-                startActivity(listeArticle);
+                intent2.putExtra("MesArticles", mesArticles);
+                startActivity(intent2);
                 return true;
-            case (R.id.menuModif):
-                Intent majArticle = new Intent(MainActivity.this,
+            case (R.id.modifArticle):
+                Intent intent3 = new Intent(MainActivity.this,
                         ModifArticle.class);
-                startActivity(majArticle);
-                majArticle.putExtra("MesArticles",mesArticles);
+                intent3.putExtra("MesArticles", mesArticles);
+                startActivity(intent3);
                 return true;
-            default :
+            default:
                 return super.onOptionsItemSelected(item);
         }
-    }*/
+    }
 }
 

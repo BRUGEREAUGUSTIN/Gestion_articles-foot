@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuAjout"
+    android:title="@string/menuAjout"
+    app:showAsAction="never">
+
+    </item>
+<item
+android:id="@+id/listAjout"
+app:showAsAction="never"
+android:title="@string/ListAjout"></item>
+<item
+android:id="@+id/modifArticle"
+app:showAsAction="never"
+android:title="@string/modifArticle"></item>
+
+
+    </menu>

@@ -13,9 +13,10 @@
         android:id="@+id/buttonAjouter"
         android:layout_width="269dp"
         android:layout_height="123dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="8dp"
         android:text="@string/boutonAjouter"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -76,6 +77,17 @@
             android:textColor="@color/white"
             android:textSize="31sp"
             android:textStyle="bold" />
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="117dp"
+        android:background="@drawable/fade_footer"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"></LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
